@@ -15,14 +15,6 @@ public class Book {
     }
 
     private final String nameBook;
-
-    @Override
-    public String toString() {
-        return "Book{" +
-                "nameAuthor=" + nameAuthor +
-                '}';
-    }
-
     private  final Author nameAuthor;
     private int publishingYear;
     public Book(String nameBook, Author nameAuthor, int publishingYear) {
