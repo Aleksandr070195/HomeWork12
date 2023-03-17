@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Main {
 
@@ -21,13 +22,15 @@ public class Main {
         System.out.println("theSecondNameAuthor.getTheFirstNameAuthor = " + theSecondNameAuthor.getTheFirstNameAuthor());
         System.out.println("theSecondNameAuthor.getTheSecondNameAuthor = " + theSecondNameAuthor.getTheSecondNameAuthor());
 
-        Book theFirstBook = new Book("Евгений Онегин",1833 );
+        Book theFirstBook = new Book("Евгений Онегин", theFirstNameAuthor,1833 );
         System.out.println("theFirstBook() = " + theFirstBook.getNameBook());
+        System.out.println("theFirstBook() = " + theFirstBook.getNameAuthor().toString());
         System.out.println("theFirstBook() = " + theFirstBook.getPublishingYear());
         theFirstBook.setPublishingYear(2023);
         System.out.println("theFirstBook.getPublishingYear() = " + theFirstBook.getPublishingYear());
 
-        Book theSecondBook = new Book("Преступление и наказание", 1866 );
+        Book theSecondBook = new Book("Преступление и наказание",theSecondNameAuthor, 1866 );
         System.out.println("theSecondBook() = " + theSecondBook.getNameBook());
+        System.out.println("theSecondBook() = " + theSecondBook.getNameAuthor().toString());
         System.out.println("theSecondBook() = " + theSecondBook.getPublishingYear());
     }}
