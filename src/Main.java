@@ -3,7 +3,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] author = {"А.С.Пушкин", "Ф.М.Достоевский"};
+        String[] author = {"Александр Пушкин", "Федор Достоевский"};
         String[] work = {"Евгений Онегин", "Преступление и наказание"};
         int[] year = {1833, 1866};
         for (int i = 0; i < author.length; i++) {
@@ -14,14 +14,20 @@ public class Main {
             System.out.println("писатель- "+ author[i] + ", произведение- " + work[i] + ", год- " + year[i]);
         }
 
-        Book Pushkin = new Book("А.С.Пушкин", "Евгений Онегин", 1833 );
-        System.out.println("Pushkin.Author() = " + Pushkin.getAuthor());
-        System.out.println("Pushkin.Work() = " + Pushkin.getWork());
-        System.out.println("Pushkin.Year() = " + Pushkin.getYear());
-        Pushkin.setYear(2023);
-        System.out.println("Pushkin.getYear() = " + Pushkin.getYear());
-        Book Dostoevsky = new Book("Ф.М.Достоевский","Преступление и наказание", 1866 );
-        System.out.println("Dostoevsky.Author() = " + Dostoevsky.getAuthor());
-        System.out.println("Dostoevsky.Work() = " + Dostoevsky.getWork());
-        System.out.println("Dostoevsky.Year() = " + Dostoevsky.getYear());
+        Author theFirstNameAuthor = new Author("Александр","Пушкин" );
+        Author theSecondNameAuthor = new Author("Федор","Достоевский" );
+        System.out.println("theFirstNameAuthor.getTheFirstNameAuthor = " + theFirstNameAuthor.getTheFirstNameAuthor());
+        System.out.println("theFirstNameAuthor.getTheSecondNameAuthor = " + theFirstNameAuthor.getTheSecondNameAuthor());
+        System.out.println("theSecondNameAuthor.getTheFirstNameAuthor = " + theSecondNameAuthor.getTheFirstNameAuthor());
+        System.out.println("theSecondNameAuthor.getTheSecondNameAuthor = " + theSecondNameAuthor.getTheSecondNameAuthor());
+
+        Book theFirstBook = new Book("Евгений Онегин",1833 );
+        System.out.println("theFirstBook() = " + theFirstBook.getNameBook());
+        System.out.println("theFirstBook() = " + theFirstBook.getPublishingYear());
+        theFirstBook.setPublishingYear(2023);
+        System.out.println("theFirstBook.getPublishingYear() = " + theFirstBook.getPublishingYear());
+
+        Book theSecondBook = new Book("Преступление и наказание", 1866 );
+        System.out.println("theSecondBook() = " + theSecondBook.getNameBook());
+        System.out.println("theSecondBook() = " + theSecondBook.getPublishingYear());
     }}
