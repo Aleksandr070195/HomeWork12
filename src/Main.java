@@ -24,6 +24,8 @@ public class Main {
 
         Book theFirstBook = new Book("Евгений Онегин", theFirstNameAuthor,1833 );
         System.out.println("theFirstBook() = " + theFirstBook.getNameBook());
+        System.out.println("theFirstBook() = " + theFirstBook.getNameAuthor().getTheFirstNameAuthor());
+        System.out.println("theFirstBook() = " + theFirstBook.getNameAuthor().getTheSecondNameAuthor());
         System.out.println("theFirstBook() = " + theFirstBook.getNameAuthor().toString());
         System.out.println("theFirstBook() = " + theFirstBook.getPublishingYear());
         theFirstBook.setPublishingYear(2023);
@@ -31,6 +33,8 @@ public class Main {
 
         Book theSecondBook = new Book("Преступление и наказание",theSecondNameAuthor, 1866 );
         System.out.println("theSecondBook() = " + theSecondBook.getNameBook());
+        System.out.println("theSecondBook() = " + theSecondBook.getNameAuthor().getTheFirstNameAuthor());
+        System.out.println("theSecondBook() = " + theSecondBook.getNameAuthor().getTheSecondNameAuthor());
         System.out.println("theSecondBook() = " + theSecondBook.getNameAuthor().toString());
         System.out.println("theSecondBook() = " + theSecondBook.getPublishingYear());
     }}
